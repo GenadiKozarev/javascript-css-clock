@@ -1,0 +1,15 @@
+{
+  "name": "javascript-css-clock",
+  "version": "1.0.0",
+  "description": "### Tick-tock goes the clock!",
+  "source": "index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "npx parcel build index.html --public-url ./"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
