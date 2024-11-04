@@ -28,7 +28,9 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    transform: translateY(-0.3rem); /* account for the height of the clock hands */
+    transform: translateY(
+        -0.3rem
+    ); /* account for the height of the clock hands */
 }
 
 .hand {
