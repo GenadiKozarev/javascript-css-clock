@@ -11,7 +11,24 @@
                 <div class="hand hour-hand"></div>
                 <div class="hand min-hand"></div>
                 <div class="hand second-hand"></div>
+                <div class="axis"></div>
+                <div class="axis-halo"></div>
             </div>
         </div>
     </body>
+
+    <script>
+        const secondHand = document.querySelector('.second-hand');
+
+        function setDate() {
+            const now = new Date();
+            const seconds = now.getSeconds();
+            // '+ 90' handles the hand's 90 degrees rotation style
+            const secondsToDegrees = ((seconds / 60) * 360) + 90;
+            // ensures the second hand makes a full circle
+            secondHand.style.transform = `rotate(${secondsToDegrees}deg)`;
+            console.log(seconds);
+        }
+        setInterval(setDate, 1000);
+    </script>
 </html>
