@@ -12,4 +12,4 @@ Tags:
 - transform: rotate()
 - transition
 - transition-timing-function: cubic-bezier();
-- element.style
+- `${element}.style.${propertyName}`
